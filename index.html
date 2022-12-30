@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censored Image</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="is-size-1 has-text-weight-bold has-text-danger is-centered">Censored Image</h1>
+                <div class="columns is-centered">
+                    <div class="column is-5-tablet is-4-desktop is-3-widescreen item-container">
+                        <div id="imageholder" class="column">
+                            <img src="./Images/KBP logo.jpg" alt="" id="image1" srcset="">
+                            <br>
+                        </div>
+                        <div class="file has-name is-boxed is-centered">
+                            <label class="file-label">
+                              <input class="file-input" type="file" name="resume" accept="image/*">
+                              <span class="file-cta">
+                                <span class="file-icon">
+                                    <i class="material-icons">upload_file</i>
+                                </span>
+                                <span class="file-label">
+                                  Choose a file…
+                                </span>
+                              </span>
+                              <span class="file-name">
+                                Filename
+                              </span>
+                            </label>
+                          </div>
+                        <input class="slider is-fullwidth is-medium is-warning is-circle" step="1" min="4" max="100" value="16" type="range" id="range" onmouseup="Censored()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
